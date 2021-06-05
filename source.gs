@@ -43,7 +43,7 @@ function sendMailInfoToSlack() {
           "payload": JSON.stringify(payload),
         };
         //Googleのシステムメールは無視
-      }else if(message.getFrom().search(/Google/) == -1 || message.getFrom().search(/google/) == -1) {
+      }else if(message.getFrom().search(/Google/) == -1 && message.getFrom().search(/google/) == -1) {
         payload = {
           "icon_emoji": slack_icon,
           "attachments": [
