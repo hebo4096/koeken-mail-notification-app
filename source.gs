@@ -8,7 +8,7 @@ function koekenInfoMailToSlack() {
   const slack_icon_twitter = ':twitter:';
 
   //チャンネル名
-  const channel = '#biz-web_division';
+  const channel = '{ Your Channel }';
 
   //アプリ名
   const app_name_mail = 'Email通知';
